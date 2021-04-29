@@ -32,7 +32,7 @@ description2: ''
       for (var pair of formData.entries()) {
         console.log(pair[0]+ ', ' + pair[1]); 
     }
-      fetch('http://localhost:3002/posts', {
+      fetch('https://oliviablog.netlify.app/posts', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         },
