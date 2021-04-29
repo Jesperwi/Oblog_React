@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/public
+
 # testing
 /coverage
 
@@ -18,10 +18,6 @@
 .env.test.local
 .env.production.local
 .env
-
-auth.js
-passport.js
-server.js
 
 npm-debug.log*
 yarn-debug.log*
