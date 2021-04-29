@@ -1,0 +1,25 @@
+* {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  animation: fadein 0.8s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(165, 165, 165);
+  border-radius: 5px;
+}
