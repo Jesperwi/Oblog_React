@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import axios from 'axios';
 import BlogDelete from './BlogDelete';
 
 const FormWrapper = styled.form`
@@ -20,9 +19,6 @@ description1: '',
 description2: ''
 });
 
-const [file, setFile] = useState(null);
-const [file1, setFile1] = useState(null);
-const [file2, setFile2] = useState(null);
 
   const handleChange = (e) => {
   setFormValues({ 
@@ -60,12 +56,7 @@ return (
       </label>
       <label>
         Image:
-        <input style={{margin:6}} type="file" name="file" onChange={e => {
-          if (e.target.files && e.target.files) {
-            const [img] = e.target.files;
-            setFile(img);
-          }} 
-          } />
+        <input style={{margin:6}} type="file" name="file"/>
       </label>
       <label>
         Description:
@@ -74,12 +65,7 @@ return (
       </label>
       <label>
         Image:
-        <input style={{margin:6}} type="file" name="file1" onChange={e => {
-          if (e.target.files && e.target.files) {
-            let [img] = e.target.files;
-            setFile1(img);
-          }} 
-          } />
+        <input style={{margin:6}} type="file" name="file1" />
       </label>
       <label>
         Description:
@@ -88,12 +74,7 @@ return (
       </label>
       <label>
         Image:
-        <input style={{margin:6}} type="file" name="file2" onChange={e => {
-          if (e.target.files && e.target.files) {
-            const [img] = e.target.files;
-            setFile2(img);
-          }}        
-           } />
+        <input style={{margin:6}} type="file" name="file2" />
       </label>
       <input style={{width:100,}} type="submit" value="Submit" />
     </FormWrapper>
