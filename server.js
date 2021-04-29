@@ -43,7 +43,7 @@ var formidable = require('formidable')
 
 let auth = require('./auth.js')(app);
 
-let allowedOrigins = ['http://localhost:3000', 'http://localhost:3002', 'https://localhost:3002'];
+let allowedOrigins = ['http://localhost:3000', 'http://localhost:3002', 'https://localhost:3002', 'https://oliviablog.netlify.app/'];
 
 app.use(cors({
   origin: (origin, callback) => {
