@@ -42,7 +42,7 @@ const BlogDelete = () => {
 
   const getAllPosts = async () => {
     try {
-      const data = await fetch('https://oliviablog.netlify.app/posts');
+      const data = await fetch('https://oliviablog-api.herokuapp.com/posts');
       const json = await data.json();
       console.log(json);
       setPosts(json.reverse());
@@ -52,7 +52,7 @@ const BlogDelete = () => {
   }
   
   const deletePost = async (_id) => {;
-    fetch(`https://oliviablog.netlify.app/posts/${_id}`, {
+    fetch(`https://oliviablog-api.herokuapp.com/posts/${_id}`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         },

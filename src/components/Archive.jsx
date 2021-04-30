@@ -36,7 +36,7 @@ const Archive = () => {
 
   const getAllPosts = async () => {
     try {
-      const data = await fetch('https://oliviablog.netlify.app/posts');
+      const data = await fetch('https://oliviablog-api.herokuapp.com/posts');
       const json = await data.json();
       setPosts(json.reverse());
     } catch(e) {
