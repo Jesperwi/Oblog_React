@@ -13,6 +13,9 @@ const FooterStyled = styled.div`
   align-items: center;
   justify-content: space-around;
   overflow: hidden;
+  @media (max-width: 768px) {
+    margin-top: 4em;
+    }
 `;
 
 const StyledLink = styled(Link)`
@@ -53,6 +56,11 @@ const Splatter = styled.img`
   height: auto;
   transform: rotate(260deg);
   position: relative;
+  @media (max-width: 768px) {
+    width:20%;
+    left: 8%;
+    top: -10%;
+    }
 `;
 
 const Splatter1 = styled.img`
@@ -63,6 +71,9 @@ const Splatter1 = styled.img`
   filter: brightness(100);
   transform: rotate(70deg);  
   position: relative;
+  @media (max-width: 768px) {
+    width:20%;
+    }
 `;
 
 const FooterLeft = styled.div`
@@ -70,6 +81,9 @@ const FooterLeft = styled.div`
   justify-content: space-between;
   flex-direction: row;
   width: 30%;
+  @media (max-width: 768px) {
+    width:60%;
+    }
 `;
 
 const navUrls = [

@@ -8,7 +8,10 @@ const Wrapper = styled.div`
   display: flex;
   height: auto;
   justify-content: space-around;
-  margin-bottom: 30em;
+  margin-bottom: 34em;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    }
 `;
 
 const Header = styled.p`
@@ -28,6 +31,9 @@ const Contentpost = styled.div`
   align-content: center;
   justify-content: center;
   padding-right: 30em;
+  @media (max-width: 768px) {
+    padding-right: 0em;
+    }
 `
 
 const Archive = () => {

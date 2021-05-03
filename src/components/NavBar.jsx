@@ -44,6 +44,9 @@ const StyledLink = styled(Link)`
       transform: scaleX(1);
     }
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const NavbarLeft = styled.div`
@@ -89,6 +92,10 @@ const Splatter2 = styled.img`
 const Logo = styled.img`
   width: 10%;
   height: auto;
+  @media (max-width: 768px) {
+    margin-left: 4em;
+    width: 50%;
+  }
 `;
 
 const Line1 = styled.div`
